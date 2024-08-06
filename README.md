@@ -85,7 +85,7 @@ If you do not have the LibTorch installed in the system search paths for CMake, 
 [Option 1] You can download the libtorch, e.g., [cu118](https://download.pytorch.org/libtorch/cu118) and then extract them to the folder `./the_path_to_where_you_extracted_LibTorch`. 
 ```
 # In a Terminal
-wget https://download.pytorch.org/libtorch/cu118/libtorch-cxx11-abi-shared-with-deps-2.0.1%2Bcu118.zip -O libtorch-cu118.zip
+wget https://download.pytorch.org/libtorch/cu118/libtorch-cxx11-abi-shared-with-deps-2.4.0%2Bcu118.zip -O libtorch-cu118.zip
 unzip libtorch-cu118.zip -d ./the_path_to_where_you_extracted_LibTorch
 rm libtorch-cu118.zip
 
@@ -133,6 +133,7 @@ set(OpenCV_DIR /your_preferred_path/lib/cmake/opencv4)
 ```
 git clone https://github.com/HuajianUP/Photo-SLAM.git
 cd Photo-SLAM/
+sudo apt install libssl-dev
 chmod +x ./build.sh
 ./build.sh
 ```
