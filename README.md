@@ -138,11 +138,18 @@ chmod +x ./build.sh
 ./build.sh
 ```
 
+## Docker (Optional)
+```
+cd docker
+./build_container.sh 11.8.0
+```
+
 ## Photo-SLAM Examples on Some Benchmark Datasets
 
 The benchmark datasets mentioned in our paper: [Replica (NICE-SLAM Version)](https://github.com/cvg/nice-slam), [TUM RGB-D](https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download), [EuRoC](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets).
 
-0. (optional) Download the dataset.
+0. (optional) Download the dataset.cp ./Photo-SLAM-eval/TUM/fr1/camera.yaml PATH_TO_TUM_DATASET/rgbd_dataset_freiburg1_desk
+cp ./Photo-SLAM-eval/TUM/fr2/camera.yaml PATH_TO_TUM_DATASET/rgbd_dataset_freiburg2_xyz
 ```
 cd scripts
 chmod +x ./*.sh
@@ -239,9 +246,6 @@ Finally, you are supposed to get two files including `RESULTS_PATH/log.txt` and 
 ## Photo-SLAM Examples with Real Cameras
 
 We provide an example with the Intel RealSense D455 at `examples/realsense_rgbd.cpp`. Please see `scripts/realsense_d455.sh` for running it.
-
-
-
 
 
 <h3>Citation</h3>
