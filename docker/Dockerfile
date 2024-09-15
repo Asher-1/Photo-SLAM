@@ -56,6 +56,7 @@ RUN mkdir /opencv && cd /opencv && \
     
 RUN mkdir /opencv/opencv-4.8.0/build && cd /opencv/opencv-4.8.0/build && \
 	cmake -DCMAKE_BUILD_TYPE=RELEASE \
+          -DOPENCV_GENERATE_PKGCONFIG=ON \
           -DWITH_CUDA=ON \
           -DWITH_CUDNN=ON \
           -DOPENCV_DNN_CUDA=ON \
